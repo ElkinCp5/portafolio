@@ -18,7 +18,7 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": ".",
+  "start_url": "http://elkincp5.github.io/portafolio",
   "display": "standalone",
   "theme_color": "#591334",
   "background_color": "#591334"
