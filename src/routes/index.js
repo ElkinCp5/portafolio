@@ -4,9 +4,8 @@ import {RouteWithSubRoutes} from "./config";
 import Layout from "../layout";
 import {routes} from "./routes";
 
-
 function Router() {
-  return <BrowserRouter>
+  return <BrowserRouter basename="/portafolio">
     <Layout 
     routes={routes} 
     config={RouteWithSubRoutes} />
