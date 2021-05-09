@@ -47,7 +47,7 @@ const Home =()=>
         <span className={'occupation color2'}>{data.occupation}</span>
         <div className={'description'}>{data.description}</div>
         <div className={'btn border-t-point border color2'}>
-            Quien soy
+            Contacto
         </div>
     </div>
     <div className={'avatar-lg'}>
