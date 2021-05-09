@@ -1,7 +1,7 @@
 {
   "name": "portafolio",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "author": "Elkin Chaverra",
   "license": "MIT",
   "homepage": "http://elkincp5.github.io/portafolio",
