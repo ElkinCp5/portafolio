@@ -12,16 +12,20 @@ const SNav = styled.nav`
         justify-content: flex-end;
         li{
             a{
-                transition: background-color .3s;
+                display: block;
+                height: 64px;
                 font-size: 1rem;
                 color: white;
                 padding: 0 15px;
                 cursor: pointer;
+                transition: all .3s;
                 line-height: 60px;
                 text-decoration: none;
                 font-weight: 500;
-                &:-webkit-any-link:active {
+                &:-webkit-any-link:active,
+                &:hover, &:focus, &.active {
                     color: #C9472D;
+                    background-color: rgba(0, 0, 0, 0.1) ;
                 }
                 &:focus-visible {
                     outline: white auto 1px;
@@ -36,9 +40,9 @@ const Nav =({Links = []})=> {
       <SNav>
         <ul>
           {
-            Links.map( Links => 
-                <li ke={Links.path} >
-                    <NavLink to={Links.path}>{Links.name}</NavLink>
+            Links.map( link => 
+                <li ke={link.path} >
+                    <NavLink exact to={link.path} activeClassName="active">{link.name}</NavLink>
                 </li>
             )
           }

@@ -1,12 +1,8 @@
 import React from "react";
-import { Home } from "../views";
+import { Home, Studies, Experience } from "../views";
 
-const Studies =()=> <React.Fragment>
-    <h3>Studies</h3>
-</React.Fragment>;
-
-const Experience =()=> <React.Fragment>
-    <h3>Experience</h3>
+const Projects =()=> <React.Fragment>
+    <h3>Projectos</h3>
 </React.Fragment>;
 
 const Contact =()=> <React.Fragment>
@@ -42,16 +38,22 @@ export const routes = [
         component: Experience,
     },
     {
-        path: '/curriculum',
-        name: 'Curriculum',
+        path: '/proyectos',
+        name: 'Projectos',
         exact: true,
-        component: Cv,
+        component: Projects,
     },
     {
-        path: '/contacto',
+        path: '/contact',
         name: 'Contacto',
         exact: true,
         component: Contact,
+    },
+    {
+        path: '/curriculum',
+        name: 'Cv',
+        exact: true,
+        component: Cv,
     },
     {
         path: '*',

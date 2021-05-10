@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import data from '../data';
 
@@ -14,7 +15,8 @@ const Styled = styled.div`
     .info{
         width: calc(100% - 300px);
         background-size: 70%;
-        padding: 0 25px;
+        padding: 0 15px ;
+        overflow-y: auto;
         .greetings {
             margin: 0 0 10px;
         }
@@ -31,12 +33,19 @@ const Styled = styled.div`
             padding: 10px 0;
             margin-bottom: 20px;
         }
+        @media screen and (max-height: 500px) {
+            /*overflow-y: auto;*/
+        }
     }
     .avatar-lg{
         width: 300px;
         background-size: 90%;
-        background-image: url(${data.avatar});
+        /*background-image: url(${data.avatar});*/
     }
+    background-repeat: no-repeat;
+    background-position: 98% bottom;
+    background-size: 280px;
+    background-image: url(${data.avatar});
 `;
 
 const Home =()=> 
@@ -46,9 +55,9 @@ const Home =()=>
         <h1 className={'name'}>{data.name}</h1>
         <span className={'occupation color2'}>{data.occupation}</span>
         <div className={'description'}>{data.description}</div>
-        <div className={'btn border-t-point border color2'}>
+        <Link to={'/contact'} className={'btn border-t-point border color2'}>
             Contacto
-        </div>
+        </Link>
     </div>
     <div className={'avatar-lg'}>
 

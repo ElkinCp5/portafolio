@@ -30,6 +30,42 @@ const data = {
             name: 'Linkedin'
         },
     ],
+    Studies: [
+        {
+            type: 'Curso',
+            title: 'Análisis Y Desarrollo De Sistema',
+            modality: 'Presencial - Tecnólogo',
+            entity: 'SENA (Servicio Nacional de Aprendizaje)',
+        },
+        {
+            type: 'Curso',
+            title: 'MERN Stack',
+            modality: 'Online',
+            entity: 'Udemy',
+        },
+        {
+            type: 'Curso',
+            title: 'MEAN Stack',
+            modality: 'Online',
+            entity: 'Udemy',
+        },
+    ],
+    Experiences: [
+        {
+            name: 'ServApp',
+            tecnology: 'AngularJs, NodeJs, MongoDB',
+            url: 'https://www.serv.com.co/',
+            position: 'CTO & Jefe de desarrollo',
+            date: '',
+        },
+        {
+            name: 'ePayco',
+            tecnology: 'ReactJs',
+            url: 'https://epayco.co/',
+            position: 'Front end developer',
+            date: '',
+        },
+    ],
     avatar: avatar,
     vactor: vactor,
     backgroundColor: 'rgba(89, 19, 52, 1)',

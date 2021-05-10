@@ -28,7 +28,8 @@ const Container = styled.div`
     }
 
     .nav, .body{
-        width: 100%; 
+        width: calc(100% - 50px);
+        padding: 0; 
         z-index: 1;
     }
     .nav{
@@ -42,13 +43,22 @@ const Container = styled.div`
     .body{
         height: calc(100% - 60px);
         position: relative;
+        padding: 0px 25px 0 25px;
     }
 
     @media screen and (max-width: 750px) {
-        width: 100%;
-    }
-    @media screen and (max-width: 500px) {
         height: 100%;
+        width: 100%;
+        .body{
+            overflow-y: auto;
+        }
+    }
+
+    @media screen and (max-height: 500px) {
+        height: 100%;
+        .body{
+            overflow-y: auto;
+        }
     }
 `;
 

@@ -32,6 +32,7 @@ body, html, #root {
   cursor: pointer;
   border-radius: 50px;
   color: #ffffff;
+  text-decoration: none;
 }
 
 .btn.border-t-point{
@@ -46,4 +47,20 @@ body, html, #root {
 .btn.border.color2{
   color: #C9472D !important;
   border: 1px solid #C9472D !important;
+}
+
+
+@media screen and (max-width: 750px) {
+  .container{
+    height: 100%;
+    width: 100%;
+  }
+
+}
+
+@media screen and (max-height: 500px) {
+  .container{
+    height: 100%;
+    width: 100%;
+  }
 }
