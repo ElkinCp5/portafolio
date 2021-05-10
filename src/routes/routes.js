@@ -2,7 +2,7 @@ import React from "react";
 import { Home, Studies, Experience } from "../views";
 
 const Projects =()=> <React.Fragment>
-    <h3>Projectos</h3>
+    <h3>Proyectos</h3>
 </React.Fragment>;
 
 const Contact =()=> <React.Fragment>
@@ -39,7 +39,7 @@ export const routes = [
     },
     {
         path: '/proyectos',
-        name: 'Projectos',
+        name: 'Proyectos',
         exact: true,
         component: Projects,
     },
