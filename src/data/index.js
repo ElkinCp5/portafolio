@@ -6,7 +6,7 @@ const defaultExperience = 'https://images.template.net/wp-content/uploads/2017/0
 
 const data = {
     greetings: `- Yo soy`,
-    name: `Elkin Chaverra Portocarrero`,
+    name: `👨‍💻 Elkin Chaverra Portocarrero`,
     occupation: `- UI, UX & Web Developer`,
     description: `Me catalogo como un aprendiz durante todos los procesos que he tomado en mi vida,
     esto ha permitido pulir mis habilidades en el diseño y desarrollo de aplicaciones web, por eso creo que todo producto debe satisfacer la necesidad por la cual asido creado sin dejar atrás su

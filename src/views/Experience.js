@@ -15,7 +15,7 @@ const Styled = styled.div`
 
 const Experience =()=> 
 <Styled>
-    <h1>Experiencia</h1>
+    <h1>👷‍♂️Experiencia</h1>
     {
         data.Experiences.map(experience=> 
             <Card
