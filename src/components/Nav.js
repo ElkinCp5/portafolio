@@ -22,10 +22,12 @@ const SNav = styled.nav`
                 line-height: 60px;
                 text-decoration: none;
                 font-weight: 500;
+                border: 0;
                 &:-webkit-any-link:active,
                 &:hover, &:focus, &.active {
                     color: #C9472D;
                     background-color: rgba(0, 0, 0, 0.1) ;
+                    border-bottom: 2px solid #C9472D;
                 }
                 &:focus-visible {
                     outline: white auto 1px;

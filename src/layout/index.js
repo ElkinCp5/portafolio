@@ -28,7 +28,7 @@ const Container = styled.div`
     }
 
     .nav, .body{
-        width: calc(100% - 50px);
+        width: 100%;
         padding: 0; 
         z-index: 1;
     }
@@ -41,9 +41,11 @@ const Container = styled.div`
         }
     }
     .body{
-        height: calc(100% - 60px);
+        width: calc(100% - 20px);
+        height: calc(500px - 84px);
         position: relative;
-        padding: 0px 25px 0 25px;
+        padding: 20px 10px 0 10px;
+        overflow-y: auto;
     }
 
     @media screen and (max-width: 750px) {
@@ -51,6 +53,7 @@ const Container = styled.div`
         width: 100%;
         .body{
             overflow-y: auto;
+            height: 100%;
         }
     }
 

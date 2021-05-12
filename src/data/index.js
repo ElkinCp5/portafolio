@@ -1,6 +1,9 @@
 import avatar from '../img/avatar_cube.png';
 import vactor from '../img/vector.png';
 
+const defaultStudie = 'https://preview.pixlr.com/images/800wm/24302/1/24302100953.jpg';
+const defaultExperience = 'https://images.template.net/wp-content/uploads/2017/01/27051344/Company-Vectors.jpg';
+
 const data = {
     greetings: `- Yo soy`,
     name: `Elkin Chaverra Portocarrero`,
@@ -32,38 +35,45 @@ const data = {
     ],
     Studies: [
         {
+            src: defaultStudie,
             type: 'Curso',
-            title: 'Análisis Y Desarrollo De Sistema',
-            modality: 'Presencial - Tecnólogo',
-            entity: 'SENA (Servicio Nacional de Aprendizaje)',
+            title: 'Tecnólogo En Análisis Y Desarrollo De Sistema',
+            modality: 'Presencial',
+            entity: 'Sena',
         },
         {
+            src: defaultStudie,
             type: 'Curso',
-            title: 'MERN Stack',
+            title: 'Mern Stack',
             modality: 'Online',
             entity: 'Udemy',
         },
         {
+            src: defaultStudie,
             type: 'Curso',
-            title: 'MEAN Stack',
+            title: 'Mean Stack',
             modality: 'Online',
             entity: 'Udemy',
         },
     ],
     Experiences: [
         {
-            name: 'ServApp',
-            tecnology: 'AngularJs, NodeJs, MongoDB',
-            url: 'https://www.serv.com.co/',
-            position: 'CTO & Jefe de desarrollo',
-            date: '',
-        },
-        {
+            src: defaultExperience,
             name: 'ePayco',
             tecnology: 'ReactJs',
             url: 'https://epayco.co/',
             position: 'Front end developer',
-            date: '',
+            dateStart: '',
+            dateEnd: '',
+        },
+        {
+            src: defaultExperience,
+            name: 'ServApp',
+            tecnology: 'AngularJs, NodeJs, MongoDB',
+            url: 'https://www.serv.com.co/',
+            position: 'CTO & Lider de desarrollo',
+            dateStart: '',
+            dateEnd: '',
         },
     ],
     avatar: avatar,

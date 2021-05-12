@@ -6,7 +6,6 @@ import data from '../data';
 const Styled = styled.div`
     display: flex;
     align-items: stretch;
-    height: 100%;
     .info, .avatar-lg{ 
         height: 100%;
         background-repeat: no-repeat;
@@ -15,8 +14,7 @@ const Styled = styled.div`
     .info{
         width: calc(100% - 300px);
         background-size: 70%;
-        padding: 0 15px ;
-        overflow-y: auto;
+        padding: 15px;
         .greetings {
             margin: 0 0 10px;
         }
@@ -37,13 +35,16 @@ const Styled = styled.div`
             /*overflow-y: auto;*/
         }
     }
+    @media screen and (max-width: 750px) {
+        /*height: 100%;*/
+    }
     .avatar-lg{
         width: 300px;
         background-size: 90%;
         /*background-image: url(${data.avatar});*/
     }
     background-repeat: no-repeat;
-    background-position: 98% bottom;
+    background-position: 98% calc(100% + 0px);
     background-size: 280px;
     background-image: url(${data.avatar});
 `;
