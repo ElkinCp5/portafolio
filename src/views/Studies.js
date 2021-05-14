@@ -15,7 +15,7 @@ const Styled = styled.div`
 
 const Studies =()=> 
 <Styled>
-    <h1>👨‍🏫Estudios</h1>
+    <h1>👨‍🏫 Estudios</h1>
     {
             data.Studies.map(studie=> 
                 <React.Fragment>

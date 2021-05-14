@@ -1,9 +1,5 @@
 import React from "react";
-import { Home, Studies, Experience } from "../views";
-
-const Projects =()=> <React.Fragment>
-    <h3>Proyectos</h3>
-</React.Fragment>;
+import { Home, Studies, Experience, Projects } from "../views";
 
 const Contact =()=> <React.Fragment>
     <h3>Contact</h3>

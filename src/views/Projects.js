@@ -13,9 +13,9 @@ const Styled = styled.div`
     }
 `;
 
-const Experience =()=> 
+const Projects =()=> 
 <Styled>
-    <h1>👷‍♂️ Experiencia</h1>
+    <h1>🛠 Proyectos</h1>
     {
         data.Experiences.map(experience=> 
             <Card
@@ -37,4 +37,4 @@ const Experience =()=>
         )
     }
 </Styled>
-export default Experience;
+export default Projects;

@@ -16,6 +16,7 @@ const SCard = styled.div`
         &:hover{
             border-left: 4px solid #c9472d;
             box-shadow: 1px 6px 12px 2px #731e0d;
+            cursor: pointer;
         }
         p{ margin: 0; }
         small{ display: block; }
@@ -25,9 +26,13 @@ const SCard = styled.div`
             border-radius: 0 0 0 50px;
             background-color: #FFF;
             position: absolute;
+            cursor: pointer;
             top: 0;
             right: 0;
             text-align: center;
+            &:hover{
+                color: #FFFFFF;
+            }
         }
     }
     .conten-studie{
