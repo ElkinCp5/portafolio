@@ -4,6 +4,7 @@ import styled from "styled-components";
 import Nav from "../components/Nav";
 import data from "../data";
 
+const coord = '-5%';
 const Container = styled.div`
     width: 700px;
     height: 500px;
@@ -14,15 +15,16 @@ const Container = styled.div`
     position: relative;
     background-image: radial-gradient(circle at 138.56% 165.92%, #781C41 0, #490E2E 100%);
     box-shadow: 0px 0px 53px 9px rgba(0,0,0,0.29);
+    overflow: hidden;
+
     .vector{
         display: block;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right:0;
         position: absolute;
-        z-index: 0;
-        background-image: url(${data.vactor});
+        top: ${coord};
+        left: ${coord};
+        bottom: ${coord};
+        right: ${coord};
+        z-index: ${coord};
         background-position: center;
         background-size: cover;
     }
@@ -41,10 +43,10 @@ const Container = styled.div`
         }
     }
     .body{
-        width: calc(100% - 20px);
+        width: calc(100%);
         height: calc(500px - 84px);
         position: relative;
-        padding: 20px 10px 0 10px;
+        margin: 20px 0 0;
         overflow-y: auto;
     }
 
@@ -85,7 +87,7 @@ const Layout =({routes = [], config})=> {
                 }
             </Switch>
         </div>
-        <div className={'vector'} />
+        <div className={'vector'} style={{ backgroundImage:`url(${data.vactor})` }}/>
     </Container>
     );
 }
